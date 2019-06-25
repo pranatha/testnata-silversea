@@ -1,0 +1,89 @@
+@import 'jeet'
+@import 'font-awesome/css/fontawesome-all.css'
+// debug()
+$innerWidth=1080px
+
+.picker-wrapper
+    margin auto
+    width $innerWidth
+    height 450px
+    background #FFFFFF
+    position relative
+    left 0
+    right 0
+    border-radius: 10px
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5)
+    align-items: center
+    display flex
+    &:after
+        content ''
+        position absolute
+        width 500px
+        right 0
+        top 0
+        bottom 0
+        margin auto
+        background url('img/gimmick.png') no-repeat
+        background-size: 100% auto
+        background-position: center
+        z-index: 0
+    .container
+        column(1.09/2)
+        position relative
+        padding 40px
+        z-index: 2
+
+.pick-selector
+    width 100%
+    height 60px
+    box-shadow 0px 1px 2px 1px rgba(0,0,0,0.3)
+    border-radius: 5px
+    cursor pointer
+    display flex
+    align-items: center
+    position relative
+    overflow auto
+    margin-bottom 20px
+    background #ffffff
+    text-align: left
+    outline none
+    border none
+    &:active
+        background: #f2f2f2
+    .picker-title
+        color #515151
+        font-size 15px
+        font-weight: bold
+        flex 1
+        margin-left 20px
+    .picker-icon
+        color #9b9b9b
+        display: flex
+        width 50px
+        border-left 0.19em dotted #dedede
+        font-size 20px
+        justify-content: center
+        align-items: center
+        padding 5px 0px
+
+.separator
+    overflow auto
+    padding 2px
+.split
+    column(1/2)
+
+button.search-hotel
+    center()
+    outline none
+    background linear-gradient(to right, #f7cf67, #fca482)
+    border-radius: 15px
+    border none
+    padding 5px 15px
+    color #ffffff
+    font-weight: bold
+    font-size 15px
+    margin-top 20px
+    &:hover
+        cursor pointer
+    &:active
+        background: linear-gradient(to right, darken(#f7cf67,10%), darken(#fca482, 10%))

@@ -1,0 +1,42 @@
+@import 'jeet'
+
++below(1078px)
+    .picker-wrapper
+        width 700px
+        &:after
+            background-size 50% auto
+            background-position bottom right
+        .container
+            column(1)
+
++below(700px)
+    .picker-wrapper
+        width 100%
+        .container
+            z-index 10
+
++below(414px)
+    .picker-wrapper
+        width 320px
+        height auto
+        .container
+            padding 30px
+        &:after
+            width 100%
+            background-size 50% auto
+            background-position bottom center
+            opacity: 0.5
+    .pick-selector
+        height 40px
+        .picker-title
+            font-size 12px
+        .picker-icon
+            width 30px
+            font-size 15px
+    .split
+        stack()
+
++below(414px)
+    .picker-wrapper
+        width 300px
+        height auto

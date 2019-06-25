@@ -1,0 +1,46 @@
+@import 'jeet'
+
+.modal-wrapper
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background: rgba(0,0,0,0.7)
+    z-index: 100
+    display flex
+    align-items: center
+    justify-content: center
+    .container
+        center(max-width=700px)
+        width 700px
+        height 500px
+        background #ffffff
+        border-radius: 10px
+        // box-shadow: 0px 0px 1px 0px #f5f5f5
+        overflow hidden
+        
+        .banner
+            min-height: 200px
+            height 200px
+            border-bottom 1px solid #dedede
+            position relative
+        .title
+            font-size 20px
+            color #515151
+            margin-bottom 10px
+        .description
+            overflow auto
+            height 300px
+            padding 20px
+        .desc-label
+            font-size: 15px bold
+            color #515151
+        .desc-content
+            margin-top 10px
+            font-size: 1.1em
+            letter-spacing: 0.03em
+            line-height: 1.2em
+            color #757575
+            text-align: justify
+            padding-bottom 50px

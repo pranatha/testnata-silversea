@@ -1,0 +1,41 @@
+@import 'jeet'
+
++below(1078px)
+    .recents-wrapper .separator .recent-item img
+        height 100%
+        width auto
+    .cities-wrapper .separator .city-item
+        height 220px
+
++below(414px)
+    .recents-wrapper .separator
+        box-sizing border-box
+        padding 15px
+    .recents-wrapper .separator .recent-item
+        stack()
+        margin-bottom 20px
+        height 250px
+        .description h2
+            font-size 20px
+    .recents-wrapper .separator .recent-item img
+        height auto
+        width 120%
+    .recents-wrapper >h1, .cities-wrapper >h1
+        font-size 22px
+    .cities-wrapper .separator 
+        box-sizing: border-box
+        padding 15px
+    .cities-wrapper .separator .city-item
+        stack()
+        margin-bottom 20px
+        .description h2
+            font-size 20px
+    .cities-wrapper .separator .city-item img 
+        height auto
+        width 120%
+
++below(320px)
+    .recents-wrapper .separator .recent-item  
+        height 180px  
+    .cities-wrapper .separator .city-item
+        height 180px
